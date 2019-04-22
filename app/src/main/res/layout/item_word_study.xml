@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen5dp"
+        android:layout_marginBottom="@dimen/dimen5dp"
+        android:layout_marginStart="@dimen/dimen10dp"
+        android:layout_marginEnd="@dimen/dimen10dp">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/dimen10dp">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            <TextView
+                    android:id="@+id/tvWord"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/dimen18dp"
+                    android:textStyle="bold"/>
+
+            <TextView
+                    android:id="@+id/tvSpelling"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/colorRed"
+                    android:textSize="@dimen/dimen18dp"/>
+
+            <Button android:layout_width="@dimen/dimen25dp"
+                    android:layout_height="@dimen/dimen25dp"
+                    android:padding="@dimen/dimen10dp"
+                    android:id="@+id/btnSound"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/dimen20dp"
+                    android:background="@drawable/ic_volume_up_black_18dp"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <ImageView
+                    android:id="@+id/imgWordStudy"
+                    android:layout_width="@dimen/dimen70dp"
+                    android:layout_height="@dimen/dimen70dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/img_welcome"/>
+
+            <TextView
+                    android:id="@+id/tvDefinition"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="@dimen/dimen5dp"
+                    android:textColor="@color/colorDarkGrey"
+                    android:textSize="@dimen/dimen16dp"
+                    android:layout_toRightOf="@+id/imgWordStudy"/>
+
+            <TextView
+                    android:id="@+id/tvMeaning"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="@dimen/dimen5dp"
+                    android:textColor="@color/colorPurple"
+                    android:textSize="@dimen/dimen16dp"
+                    android:layout_toRightOf="@+id/imgWordStudy"
+                    android:layout_below="@+id/tvDefinition"/>
+
+        </RelativeLayout>
+
+        <View
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="@dimen/dimen20dp"
+                android:layout_marginEnd="@dimen/dimen20dp"
+                android:layout_marginTop="@dimen/dimen5dp"
+                android:layout_marginBottom="@dimen/dimen5dp"
+                android:background="@color/colorGrey"/>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginStart="@dimen/dimen10dp">
+
+            <TextView
+                    android:id="@+id/tvExample"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen5dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/dimen16dp"/>
+
+            <TextView
+                    android:id="@+id/tvTranslation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen5dp"
+                    android:textColor="@color/colorOrange"
+                    android:textSize="@dimen/dimen16dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

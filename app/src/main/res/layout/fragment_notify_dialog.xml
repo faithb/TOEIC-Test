@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools" android:layout_width="wrap_content"
+              android:layout_height="160dp"
+              android:layout_gravity="center"
+              android:background="@drawable/border_dialog_notify"
+              android:orientation="vertical">
+
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/endTest"
+              android:textColor="@color/colorBlack"
+              android:paddingStart="@dimen/dimen20dp"
+              android:layout_marginBottom="@dimen/dimen10dp"
+              android:layout_marginTop="10dp"
+              android:textSize="@dimen/dimen18dp"
+              android:drawablePadding="@dimen/dimen10dp"
+              android:drawableLeft="@drawable/ic_rate_review_black_24dp"/>
+
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:paddingStart="@dimen/dimen20dp"
+              android:gravity="center"
+              android:textSize="@dimen/dimen16dp"
+              android:layout_marginBottom="@dimen/dimen10dp"
+              android:text="@string/doYouWantToLeaveThisTest"/>
+
+    <LinearLayout android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="center"
+                  android:paddingBottom="@dimen/dimen20dp"
+                  tools:ignore="ButtonStyle">
+        <Button android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:id="@+id/btnStay"
+                android:text="@string/stay"
+                android:textColor="@color/colorWhite"
+                android:background="@drawable/border_btnstay"
+                android:textAllCaps="false"
+                android:layout_marginRight="@dimen/dimen10dp"/>
+
+        <Button android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:id="@+id/btnLeave"
+                android:textColor="@color/colorWhite"
+                android:textAllCaps="false"
+                android:background="@drawable/border_btnleave"
+                android:text="@string/leave"/>
+    </LinearLayout>
+
+</LinearLayout>

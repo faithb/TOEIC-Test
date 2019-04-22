@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_taking_test">
+
+    <RelativeLayout
+            android:id="@+id/rlDoTestToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen50dp"
+            android:background="@color/colorBlue"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true">
+
+        <Button
+                android:layout_width="@dimen/dimen30dp"
+                android:layout_height="@dimen/dimen30dp"
+                android:layout_alignParentTop="true"
+                android:id="@+id/btnBackToListTest"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/ic_arrow_back_white_18dp"
+                android:layout_marginStart="@dimen/dimen10dp"
+                android:layout_marginTop="@dimen/dimen10dp"/>
+
+        <TextView
+                android:text="@string/level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/btnBackToListTest"
+                android:id="@+id/tvLevel"
+                android:layout_marginLeft="@dimen/dimen10dp"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/dimen20dp"
+                tools:ignore="RelativeOverlap"/>
+
+        <Chronometer
+                android:id="@+id/chronometer"
+                android:layout_width="@dimen/dimen50dp"
+                android:layout_height="@dimen/dimen20dp"
+                android:layout_toLeftOf="@+id/btnListQuestions"
+                android:gravity="center"
+                android:textSize="@dimen/dimen16dp"
+                android:layout_marginTop="@dimen/dimen15dp"
+                android:layout_marginRight="@dimen/dimen10dp"
+                android:textColor="@color/colorWhite"/>
+
+        <Button
+                android:layout_width="@dimen/dimen30dp"
+                android:layout_height="@dimen/dimen30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="@dimen/dimen30dp"
+                android:id="@+id/btnListQuestions"
+                android:background="@drawable/ic_apps_white_18dp"
+                android:layout_marginTop="@dimen/dimen10dp"/>
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+            android:id="@+id/questionDetailPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/rlDoTestToolbar"/>
+
+    <FrameLayout
+            android:id="@+id/frListQuestions"
+            android:visibility="gone"
+            android:layout_below="@+id/rlDoTestToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+</RelativeLayout>

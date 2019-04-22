@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+                android:id="@+id/cardViewQuestionTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorAccent"
+                android:gravity="center"
+                android:text="@string/questionDetailHere"
+                android:layout_margin="@dimen/dimen10dp">
+
+            <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imgQuestionTitle"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/dimen16dp"
+                    android:layout_marginTop="@dimen/dimen10dp"
+                    android:layout_marginBottom="@dimen/dimen10dp"
+                    android:layout_marginStart="@dimen/dimen20dp"
+                    android:layout_marginEnd="@dimen/dimen20dp"
+                    android:visibility="gone"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen120dp"
+                    android:id="@+id/tvQuestionTitle"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/dimen16dp"
+                    android:layout_marginTop="@dimen/dimen10dp"
+                    android:layout_marginBottom="@dimen/dimen10dp"
+                    android:layout_marginStart="@dimen/dimen20dp"
+                    android:layout_marginEnd="@dimen/dimen20dp"/>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/cardViewAnswer"
+                android:layout_below="@+id/cardViewQuestionTitle"
+                android:layout_marginStart="@dimen/dimen10dp"
+                android:layout_marginEnd="@dimen/dimen10dp"
+                android:layout_marginBottom="@dimen/dimen10dp">
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                <TextView
+                        android:id="@+id/tvQuestionContent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="@dimen/dimen20dp"
+                        android:paddingEnd="@dimen/dimen20dp"
+                        android:layout_marginTop="@dimen/dimen10dp"
+                        android:layout_marginBottom="@dimen/dimen10dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/dimen16dp"
+                        android:visibility="gone"/>
+
+                <RadioGroup
+                        android:id="@+id/rgAnswer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    <RadioButton
+                            android:id="@+id/rbAnswerA"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dimen50dp"
+                            android:paddingStart="@dimen/dimen20dp"
+                            android:paddingEnd="@dimen/dimen20dp"
+                            android:paddingTop="@dimen/dimen10dp"
+                            android:paddingBottom="@dimen/dimen10dp"
+                            android:background="@drawable/bg_answer"
+                            android:text="@string/optionA"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/dimen16dp"
+                            android:button="@null"/>
+
+                    <View
+                            android:id="@+id/divider2"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginStart="@dimen/dimen20dp"
+                            android:layout_marginEnd="@dimen/dimen20dp"
+                            android:background="?android:attr/listDivider"/>
+
+                    <RadioButton
+                            android:id="@+id/rbAnswerB"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dimen50dp"
+                            android:paddingStart="@dimen/dimen20dp"
+                            android:paddingEnd="@dimen/dimen20dp"
+                            android:paddingTop="@dimen/dimen10dp"
+                            android:paddingBottom="@dimen/dimen10dp"
+                            android:textColor="@color/colorBlack"
+                            android:background="@drawable/bg_answer"
+                            android:text="@string/optionB"
+                            android:textSize="@dimen/dimen16dp"
+                            android:button="@null"/>
+
+                    <View
+                            android:id="@+id/divider3"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginStart="@dimen/dimen20dp"
+                            android:layout_marginEnd="@dimen/dimen20dp"
+                            android:background="?android:attr/listDivider"/>
+
+                    <RadioButton
+                            android:id="@+id/rbAnswerC"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dimen50dp"
+                            android:paddingStart="@dimen/dimen20dp"
+                            android:paddingEnd="@dimen/dimen20dp"
+                            android:paddingTop="@dimen/dimen10dp"
+                            android:paddingBottom="@dimen/dimen10dp"
+                            android:background="@drawable/bg_answer"
+                            android:textColor="@color/colorBlack"
+                            android:text="@string/optionC"
+                            android:textSize="@dimen/dimen16dp"
+                            android:button="@null"/>
+
+                    <View
+                            android:id="@+id/divider4"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginStart="@dimen/dimen20dp"
+                            android:layout_marginEnd="@dimen/dimen20dp"
+                            android:background="?android:attr/listDivider"/>
+
+                    <RadioButton
+                            android:id="@+id/rbAnswerD"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dimen50dp"
+                            android:paddingStart="@dimen/dimen20dp"
+                            android:paddingEnd="@dimen/dimen20dp"
+                            android:paddingTop="@dimen/dimen10dp"
+                            android:paddingBottom="@dimen/dimen10dp"
+                            android:background="@drawable/bg_answer"
+                            android:text="@string/optionD"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/dimen16dp"
+                            android:button="@null"/>
+
+                </RadioGroup>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen40dp"
+                android:id="@+id/cardViewAudio"
+                android:layout_below="@+id/cardViewAnswer"
+                android:layout_marginStart="@dimen/dimen10dp"
+                android:layout_marginEnd="@dimen/dimen10dp"
+                android:layout_marginBottom="@dimen/dimen10dp"
+                android:visibility="gone">
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/dimen5dp">
+
+                <ImageView
+                        android:id="@+id/imgState"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/dimen30dp"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:textColor="@color/colorBlack"
+                        android:src="@drawable/ic_play_circle_outline_black_24dp"
+                        android:textStyle="bold"/>
+
+                <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="@dimen/dimen10dp"
+                        android:id="@+id/tvCurrentTime"
+                        android:layout_gravity="center"
+                        android:text="@string/timeDefault"/>
+
+                <SeekBar
+                        android:layout_width="0dp"
+                        android:layout_weight="5"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:id="@+id/seekBarPlay"/>
+
+                <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/dimen10dp"
+                        android:layout_gravity="center"
+                        android:id="@+id/tvTotalTime"
+                        android:text="@string/timeDefault"/>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+                android:id="@+id/cardViewExplanation"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/dimen10dp"
+                android:layout_marginEnd="@dimen/dimen10dp"
+                android:layout_marginBottom="@dimen/dimen10dp"
+                android:layout_below="@+id/cardViewAudio"
+                android:visibility="gone">
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/dimen10dp"
+                    android:paddingBottom="@dimen/dimen10dp"
+                    android:orientation="vertical">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/explanation"
+                        android:textColor="@color/colorRed"
+                        android:textSize="@dimen/dimen16dp"
+                        android:layout_marginStart="@dimen/dimen10dp"/>
+
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tvExplanation"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/dimen16dp"
+                        android:layout_marginStart="@dimen/dimen20dp"
+                        android:layout_marginEnd="@dimen/dimen10dp"/>
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/translation"
+                        android:textColor="@color/colorRed"
+                        android:textSize="@dimen/dimen16dp"
+                        android:layout_marginStart="@dimen/dimen10dp"
+                        android:layout_marginTop="@dimen/dimen10dp"/>
+
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tvTranslation"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/dimen16dp"
+                        android:layout_marginStart="@dimen/dimen20dp"
+                        android:layout_marginEnd="@dimen/dimen10dp"/>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>
+</ScrollView>

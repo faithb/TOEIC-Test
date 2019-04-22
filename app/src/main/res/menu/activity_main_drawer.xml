@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="@string/toeicIntroduction">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                        android:id="@+id/itemToeicIntroduction"
+                        android:icon="@drawable/ic_subject_black_18dp"
+                        android:title="@string/toeicIntroduction"/>
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="@string/listening">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                        android:id="@+id/itemPart1"
+                        android:icon="@drawable/ic_filter_1_black_18dp"
+                        android:title="@string/part1"/>
+                <item
+                        android:id="@+id/itemPart2"
+                        android:icon="@drawable/ic_filter_2_black_18dp"
+                        android:title="@string/part2"/>
+                <item
+                        android:id="@+id/itemPart3"
+                        android:icon="@drawable/ic_filter_3_black_18dp"
+                        android:title="@string/part3"/>
+                <item
+                        android:id="@+id/itemPart4"
+                        android:icon="@drawable/ic_filter_4_black_18dp"
+                        android:title="@string/part4"/>
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="@string/reading">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                        android:id="@+id/itemPart5Basic"
+                        android:icon="@drawable/ic_filter_5_black_18dp"
+                        android:title="@string/part5Basic"/>
+                <item
+                        android:id="@+id/itemPart5Intermediate"
+                        android:icon="@drawable/ic_filter_5_black_18dp"
+                        android:title="@string/part5Intermediate"/>
+                <item
+                        android:id="@+id/itemPart5Advanced"
+                        android:icon="@drawable/ic_filter_5_black_18dp"
+                        android:title="@string/part5Advanced"/>
+                <item
+                        android:id="@+id/itemPart6"
+                        android:icon="@drawable/ic_filter_6_black_18dp"
+                        android:title="@string/part6"/>
+                <item
+                        android:id="@+id/itemPart7"
+                        android:icon="@drawable/ic_filter_7_black_18dp"
+                        android:title="@string/part7"/>
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="@string/study">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                        android:id="@+id/itemGrammar"
+                        android:icon="@drawable/ic_import_contacts_black_18dp"
+                        android:title="@string/grammar"/>
+
+                <item
+                        android:id="@+id/itemWordStudy"
+                        android:icon="@drawable/ic_library_books_black_18dp"
+                        android:title="@string/word"/>
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="@string/communicate">
+        <menu>
+            <item
+                    android:id="@+id/itemShare"
+                    android:icon="@drawable/ic_share_black_24dp"
+                    android:title="@string/share"/>
+            <item
+                    android:id="@+id/itemSend"
+                    android:icon="@drawable/ic_send_black_24dp"
+                    android:title="@string/send"/>
+        </menu>
+    </item>
+</menu>

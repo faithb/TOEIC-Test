@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/bg_list_question">
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="480dp"
+            android:paddingTop="@dimen/dimen20dp"
+            android:paddingBottom="@dimen/dimen20dp">
+
+        <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycleViewListQuestions"
+                android:layout_width="300dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"/>
+
+    </ScrollView>
+
+    <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="@dimen/dimen120dp"
+            android:layout_height="@dimen/dimen50dp"
+            android:text="@string/submit"
+            android:textColor="@color/colorBlack"
+            android:layout_marginTop="@dimen/dimen20dp"
+            android:background="@drawable/bg_buttons"
+            android:layout_gravity="center_horizontal"/>
+
+</LinearLayout>

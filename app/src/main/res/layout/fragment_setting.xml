@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              android:background="@color/colorWhite"
+              android:layout_marginTop="@dimen/dimen20dp"
+              android:paddingTop="@dimen/dimen10dp"
+              android:paddingBottom="@dimen/dimen10dp"
+              tools:context=".settings.SettingFragment">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_gravity="center_vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="@dimen/dimen30dp"
+            android:layout_marginStart="@dimen/dimen10dp"
+            android:src="@drawable/ic_ques"/>
+
+    <LinearLayout
+            android:layout_weight="5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dimen20dp"
+            android:orientation="vertical">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/showAnswer"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/dimen16dp"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/switchShowAnswer"
+                android:textColor="@color/colorBlack"
+                android:gravity="center_vertical"/>
+
+    </LinearLayout>
+
+    <Switch
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="@dimen/dimen30dp"
+            android:id="@+id/switchShowAnswer"/>
+
+</LinearLayout>

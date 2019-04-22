@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dimen10dp"
+        android:layout_marginStart="@dimen/dimen10dp"
+        android:layout_marginTop="@dimen/dimen5dp"
+        android:layout_marginBottom="@dimen/dimen5dp">
+
+    <LinearLayout
+            android:id="@+id/llGrammar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/bg_test_title">
+
+        <TextView
+                android:id="@+id/tvGrammarTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/dimen20dp"
+                android:paddingTop="@dimen/dimen10dp"
+                android:paddingEnd="@dimen/dimen10dp"
+                android:textSize="@dimen/dimen16dp"
+                android:textColor="@color/colorBlack"/>
+
+        <TextView
+                android:id="@+id/tvGrammarExample"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/dimen20dp"
+                android:paddingEnd="@dimen/dimen10dp"
+                android:paddingBottom="@dimen/dimen10dp"
+                android:textSize="@dimen/dimen14dp"/>
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>
