@@ -306,7 +306,7 @@ class QuestionDetailFragment : Fragment(), View.OnClickListener {
         }
     }
 
-    private fun seekBarChangeListener() =
+    private fun seekBarChangeListener() {
         seekBarPlay.setOnSeekBarChangeListener(object : SeekBar.OnSeekBarChangeListener {
             override fun onProgressChanged(seekBar: SeekBar?, progress: Int, fromUser: Boolean) {
                 if (fromUser) {
@@ -320,6 +320,7 @@ class QuestionDetailFragment : Fragment(), View.OnClickListener {
             override fun onStopTrackingTouch(seekBar: SeekBar?) {
             }
         })
+    }
 
     private fun setLayoutHeight() = with(ViewGroup.LayoutParams.WRAP_CONTENT) {
         rbAnswerA.layoutParams.height = this
