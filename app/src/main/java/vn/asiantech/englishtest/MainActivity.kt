@@ -17,7 +17,6 @@ class MainActivity : AppCompatActivity() {
 
         setContentView(R.layout.activity_main)
         window.statusBarColor = resources.getColor(R.color.colorBlue)
-        window.closeAllPanels()
         screenDelay()
     }
 
