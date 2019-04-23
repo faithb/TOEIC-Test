@@ -1,17 +1,15 @@
-# WinterFinal-EnglishTest
+# English-Test
 ## Thành Viên
-  - Lê Quốc Bảo
   - Trần Văn Hưng
 ## Mô tả chức năng ứng dụng
 ### Ứng dụng
-  - Đăng nhập, đăng kí
-  - Cập nhật thông tin người dùng
   - Test kĩ năng Listening
   - Test kĩ năng Reading
   - Xem kết quả sau khi làm test
   - Xem giải thích chi tiết từng câu
   - Lưu thời gian và kết quả test
   - Đếm thời gian trong khi làm test
+  - Cài đặt hiển thị đáp án khi làm bài.
 ### Cơ sở dữ liệu
   - [ ] File mp3 và các phương án lựa chọn tương ứng
   - [ ] Các câu hỏi điền vào chỗ trống và các phương án lựa chọn tương ứng
