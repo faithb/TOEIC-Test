@@ -84,6 +84,7 @@ class TestResultFragment : Fragment(), View.OnClickListener {
         val preferences = activity?.getSharedPreferences(getString(R.string.fileName), Context.MODE_PRIVATE)
         activity?.intent?.apply {
             position = getIntExtra(TestListFragment.ARG_POSITION, -1)
+            level = getIntExtra(TestListFragment.ARG_LEVEL, -1)
         }
         val dataTimeAndScore = preferences?.getString("$level", "")
         val gson = GsonBuilder().setPrettyPrinting().create()
