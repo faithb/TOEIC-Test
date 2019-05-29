@@ -1,6 +1,5 @@
 # WinterFinal-EnglishTest
-## Thành Viên
-  - Lê Quốc Bảo
+## Thực hiện
   - Trần Văn Hưng
   
 ## Mô tả chức năng ứng dụng
